@@ -1,5 +1,6 @@
 /*título de seção, título de artigo, título de lista tec, título de lista quali, */
-
+@font-face {font-family: "helvetica55roman";
+                src: url("/font/helvetica55roman.ttf");}
 
 .menu1 { margin: 0;
         max-height: 64px;
