@@ -1,39 +1,56 @@
 /*título de seção, título de artigo, título de lista tec, título de lista quali, */
 @font-face {font-family: "helvetica55roman";
-                src: url("/font/helvetica55roman.ttf");}
+                src: url("font/helvetica55roman.ttf");}
+@font-face {font-family: "bonkrobbers";
+                src:url("font/Bonk Robbers.orf");}
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
 
-.menu1 { margin: 0;
-        max-height: 64px;
+
+* {margin: 0;
+   padding: 0;
+}
+.cabeçalho {position: relative;
+                height: 104px;}
+
+
+.menu-redes { 
+        background-color: #ffffff;
+         max-height: 64px;
         min-height: 40px;
-        height: auto;
-        width: auto; 
-        background-color:#ffffff;}
+        height: 100%;
+        width: auto;
+        margin-right: 10%;
+        margin-left: 10%;
+}
+.menu-redes > img { padding-top: .1rem;
+                   left: 10%;} 
 
-    .marca { position: relative;
-             top: 2px;
-             left: 10%;} 
+ .redes { float: right;
+          padding-top: 1.5rem;
+          font-size: 2.2rem;
+        }
 
-    .redes {position: relative; 
-            float: right;
-            padding-top: 20px;
-            padding-right: 10%;
-            display:inline;}
+.redes > a { color: #000000
+            }
 
-    .principal { margin: 0;
-                 width: auto;
-                 height: 40px;
-                 background-color: #F8AA16;}
+.redes > a:hover { color:#F8AA16;
+                        }
+
+    .principal { 
+                max-height: 40px;
+                height: 100%;
+                width: auto; 
+               border-right: 10%;
+               border-left: 10%;
+                background-color: #F8AA16;}
 
         .logo {position: relative;
-                top: 8px;
+                top: .5rem;
                 left: 10%;}
 
-        nav {position: relative;
-                float: right;
-                padding-top: 10px;
+        nav {   float: right;
+                padding-top: .8rem;
                 padding-right: 10%;
-                display:inline;
-                font-family: "helvetica", sans-serif;
                 text-transform: uppercase;}
 
              .home, .produtos {margin-right: 25px;
@@ -48,37 +65,35 @@
 
     
 
-    .section { background-color: #ffffff; 
-        margin: 0;
-               padding-top: 10px;
-               padding-left: 10%;
-               font-family: Helvetica;
-               font-size: 68px;
-               color:#F8AA16;}
+    .section { padding-left: 10%;
+               height: 3rem;
+                line-height: 0%;}
+        .section > h1 { font-size: 4rem;
+                        color:#F8AA16;
+                }
 
-         #base { background-color: #ffffff;
-                margin-top: 1%;
+         .base {margin-top: 1%;
                 margin-right: 10%;
                 margin-left: 10%;
-           -moz-column-count: 3;
-           -webkit-column-count: 3;
-           -moz-column-width: 300px;
-           -webkit-column-width: 300px; 
-           -moz-column-gap: 30px;
-           -webkit-column-gap: 30px;
+                -moz-column-count: 3;
+                -webkit-column-count: 3;
+                -moz-column-width: 300px;
+                -webkit-column-width: 300px; 
+                -moz-column-gap: 30px;
+                -webkit-column-gap: 30px;
             text-align: center;
             line-height: 1.3;
-            height: 250px;}   
+            height: 14rem;}   
 
         .bloco1 { display: inline-block;
-                  width: 100%;
-                  height: 100%;} /**/
+        } /**/
+
                 .m1 {display: inline-block;
-                     margin: 0;
-                     width: 70%;}
+                     width: 70%;
+                     padding-top: 1rem;}
                         
                   
-                                        .ponto1, .ponto2, .ponto3 { font-size: 26px;
+                                        .ponto1, .ponto2, .ponto3 { font-size: 2rem;
                                                                     text-transform: uppercase;
                                                                     color: #F8AA16;}
                
@@ -89,40 +104,113 @@
                           height: 100%;}
                           .p1 {display: inline-block;
                                 margin: 0;
-                               width: 75%;}
+                               width: 75%;
+                               padding-top: 1rem;}
                           
         .bloco3 { display: inline-block;
                          width: 100%;
                          height: 100%;}
                          .s1 {display: inline-block;
                               margin: 0;
-                              width: 79%;}
-
+                              width: 79%;
+                              padding-top: 1rem;
+                        object-fit: contain;}
                  /*apresentação da empresa*/
-        .intro {margin-top: 5%;
+        .intro { margin-top: 3%;
                 margin-right: 10%;
-                margin-bottom: 10%;
+                margin-bottom: 5%;
                 margin-left: 10%;
                 text-align: center;}
-                .intro > h2 { font-family: helvetica, sans-serif; 
-                              font-size: 34px; 
+                .intro > h2 { font-size: 2rem; 
                               color: #F8AA16;
                  }       
-                 .botwapp {
-                        display: block;
-                        float: right;
-                       
-                        margin-right: 10%;}         
+                 .intro button { color: rgba(255, 255, 255, 1);
+                        background: #DCE35B;  /* fallback for old browsers */
+                        background: -webkit-linear-gradient(to right, #5bf360, #45b649);  /* Chrome 10-25, Safari 5.1-6 */
+                        background: linear-gradient(to right, #5bf360, #5cce45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                          font-size: 1.5rem;
+                        padding: 1rem 2rem;
+                        border-radius: 5px;
+                        border: none;
+                        cursor: pointer;
+                 }
+                    .intro button:hover {color: green;}        
+                    .intro button:active {background: #DCE35B;  /* fallback for old browsers */
+                        background: -webkit-linear-gradient(to left, #5bf360, #45b649);  /* Chrome 10-25, Safari 5.1-6 */
+                        background: linear-gradient(to left, #5bf360, #5cce45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                        }
+/* PRIMEIRO COMANDO*/
 
+.equipo { padding-left: 10%;
+          height: 5rem;
+         }
+          .equipo > h1 { font-size: 4rem;
+                         color:#F8AA16;
+                        }
+.produto1 { height: 6.5rem;
+            width: 100%;
+        padding-right: 10%;
+        padding-left: 10%;
+        background-color: #F8AA16;
+}
 
+        .scav1 > h2 {display: inline-block;
+                width: 20rem;
+                font-family: 'Bonk Robbers', sans-serif; 
+                font-size: 4rem;
+               padding-top: .8rem;
+               padding-right: 23rem;
+               border-right: 2px solid #ffffff;
+        }
 
+        .scav1 > h3 {display:inline-block;
+                width: 4rem;
+                padding-left: 3rem;
+                font-family: "helvetica 55 roman", sans-serif; 
+                font-size: 2rem; 
+                text-transform: uppercase; 
+                font-weight: lighter;
+                color: #ffffff;
+                padding-top: 1rem
+        }
 
+        .container1 {height: 44rem;
+                        width: 100%; }
+        .fotoscav1 { width: 44rem;
+                    padding-left: 7%;
+                display:inline-block;
+        }
+        .esp-list1 {
+                    width: 30rem;
+                    
+                    float: right;
+                    padding-top: 1rem;
+                }
+                .tec { font-family: "Helvetica", sans-serif; 
+                        font-style: italic; 
+                        line-height: 150%; 
+                        color: #333333;                     
+                        border-left: 2px solid #F8AA16; 
+                        margin-left: -2.8rem;
+                        padding-left: 4rem;
+                        }
+                .arg-venda { padding-top: 4rem;
+                             position:relative;
+                             left: -2.8rem;
+                        }
+                .arg {font-family: "Helvetica", sans-serif; 
+                        font-size: 1.5rem; 
+                        line-height: 150%; 
+                        color: #333333;
+                }             
+                
+        
 .contato h2 { font-family: helvetica; font-size: 34px; color:#F8AA16;}
     
-.produto { font-family: 'Bonk Robbers', sans-serif; font-size: 68px; color: #000000; background-color: #F8AA16; background-size: 400px;}
+
 h3 { font-family: "helvetica 55 roman", sans-serif; font-size: 42px; text-transform: uppercase; color: #ffffff;}
 h4 { font-family: "helvetica 55 roman", sans-serif; font-size: 68px; text-transform: uppercase; color: #F8AA16;}
-.tec { font-family: "Helvetica", sans-serif; font-size: 16px; font-style: italic; line-height: 150%; color: #333333;}
+
 .titulo {font-family: "Helvetica", sans-serif; font-size: 26px; font-style: italic; line-height: 150%; color: #333333;}
-.arg {font-family: "Helvetica", sans-serif; font-size: 26px; line-height: 150%; color: #333333;}
+
 .tele {font-family: "Helvetica", sans-serif; font-size: 26px; line-height: 150%; color: #F8AA16; text-transform: uppercase;}

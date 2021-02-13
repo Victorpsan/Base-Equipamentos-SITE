@@ -6,16 +6,21 @@
         <meta name="viewport" content="width=device-width, usar-scalable=1, initial-scale=1">
         <link rel="stylesheet" href="css/normalizr.css">
         <link rel="stylesheet" type="text/css" href="./CSS/main.css"/>
+        <link rel="apple-touch-icon" sizes="180x180" href= "img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href= "img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href= "img/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
         <title>Base Equipamentos Industriais</title>
     </head>
     <body>
-        <header id= "menu";> 
-            <div class= "menu1";>
-                <img class= "marca" src= "img/BASE_simbolo 1.png" alt= "simbolo da marca">
+        <header class= "cabeçalho";> 
+            <div class= "menu-redes";>
+                <img src= "img/BASE_simbolo 1.png" alt= "simbolo da marca">
                 <div class="redes">
-                <a class="fb" href="facebook"><img src="img/FB.png" alt="ícone facebook"></a>
-                <a class="insta" href="instagram"><img src="img/INSTA.png" alt="ícone instagram"></a>
-                <a class="wapp" href="whatsapp"><img src="img/WApp.png" alt="ícone whatsapp"></a>
+                <a  href="facebook"><i class="fab fa-facebook-square"></i></a>
+                <a  href="instagram"><i class="fab fa-instagram-square"></i></a>
+                <a  href="whatsapp"><i class="fab fa-whatsapp-square"></i></a>
                 </div>
             </div>
             <div class= "principal";>
@@ -28,8 +33,10 @@
             </div>    
         </header>
         <main>
-           <h1 class= "section">A BASE</h1> 
-            <section id="base">   
+            <div class="section">
+            <h1>A BASE</h1> 
+            </div>
+            <section class="base">   
                 <article class= "bloco1">
                    
                         
@@ -55,34 +62,45 @@
                 </article>
             </section>
                 <aside class= "intro">
-                    <h2>Procure um de nossos especialistas<a href="linkwhatsapp"><img class="botwapp" src="img/BotãoWHATSAPP.png" alt="botão com link direto para contato por whatsapp"></a></h2>
+                    <h2>Procure um de nossos especialistas. <a class= "botaopwap" href="#"><button type="button" role="button"> WhatsApp <i class="fab fa-whatsapp"></i></h2></a>
                         
                         
                 </aside>
            
 
             <section>
-                <h1 class= "section">EQUIPAMENTOS</h1>
-                <article>
+                 <div class="equipo">
+                   <h1>EQUIPAMENTOS</h1>
+                 </div> 
+                 
                     
-                    <header>
-                        <h2 class= "produto";>SCAV X1</h2>
-                        <h3>Especificações Técnicas</h3>
+                    <header class="produto1">
+                        <div class="scav1">
+                         <h2>SCAV X1</h2>
+                         <h3>Especificações Técnicas</h3>
+                        </div>
                     </header>
-                    <img src="img/Larranja1.png" alt="escavadeira SCAV X3">
+                    <article class="container1">
+                        <div class="fotoscav1">
+                            <img src="img/Larranja1.png" alt="escavadeira SCAV X3">
+                        </div>
+                        <div class="esp-list1">
                             <ul class= "tec";>
                                 <li class= "titulo";>*SCAV X1</li>
-                                <li>- Peso operacional: 1000 kg</li>
-                                <li>- Capacidade do balde de escavação: 0.02 cbm/ 120kg</li>
-                                <li>- Motor: 1 cilindro, KOOP KD192F</li>
-                                <li>- Profundidade Max de escavação: 1,44 m</li>
-                                <li>- Profundidade Max de escavação vertical: 1,32m</li>
-                                <li>- Altura Max de escavação: 2,49 m</li>
-                                <li>- Altura Max de despejo: 1,75m</li>
-                                <li>- Raio Max de escavação no solo: 2,44 m</li>
-                                <li>- Dimensão total: 2550 x 940 x 1330 mm</li>
+                                <li> Peso operacional: 1000 kg</li>
+                                <li> Capacidade do balde de escavação: 0.02 cbm/ 120kg</li>
+                                <li> Motor: 1 cilindro, KOOP KD192F</li>
+                                <li> Profundidade Max de escavação: 1,44 m</li>
+                                <li> Profundidade Max de escavação vertical: 1,32m</li>
+                                <li> Altura Max de escavação: 2,49 m</li>
+                                <li> Altura Max de despejo: 1,75m</li>
+                                <li> Raio Max de escavação no solo: 2,44 m</li>
+                                <li> Dimensão total: 2550 x 940 x 1330 mm</li>
                             </ul>
-                        <h4>VANTAGENS</h4>
+                        
+                          <div class="arg-venda">
+                          <h4>VANTAGENS</h4>
+                          </div>
                             <ul class= "arg";>
                                 <li>Assentos de luxo</li>
                                 <li>Pedal do disjuntor embutido</li>
@@ -90,7 +108,8 @@
                                 <li>Excelente sistema hidráulico</li>
                                 <li>Bomba de motor EATON SHIMADZU</li>
                             </ul>
-                 </article>
+                        </div>
+                    </article>
 
                  <article>
                      <header>
