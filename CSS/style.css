@@ -95,7 +95,6 @@ html {
 
 .cabeçalho { 
     height: 65vh;
-    
     background-image: url("img/fotoBANNER.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -308,9 +307,10 @@ html {
     align-items: center;
 }
 .scav1 h1 {
-    font-family: "Bonk Robbers Regular", sans-serif;
-    font-size: 4rem;
+    font-family: "helvetica", sans-serif;
+    font-size: 2.5rem;
     margin-top: .8rem;
+    font-weight: bold;
 }
 .scav1 h2 {
     width: 30%;
@@ -338,11 +338,12 @@ html {
     width: 70%;
 }
 .fotoscav1 img {
-    width: 75%;
+    width: 85%;
 }
 .esp-list1 {
     width: 30%;
     padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 .tec1 .titulo {
     font-size: 1.5rem;
@@ -391,8 +392,8 @@ html {
     align-items: center;
 }
 .scav2 h1 {
-    font-family: "Bonk Robbers Regular", sans-serif;
-    font-size: 4rem;
+    font-family: "Helvetica", sans-serif;
+    font-size: 2.5rem;
     margin-top: .8rem;
 }
 .scav2 h2 {
@@ -419,14 +420,14 @@ html {
 }
 .fotoscav2 {
     width: 70%;
-    margin-right: -1.8rem;
 }
 .fotoscav2 img{
-    width: 100%;
+    width: 117%;
 }
 .esp-list2 {
     width: 30%;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .tec2 .titulo {
     font-size: 1.5rem;
@@ -462,8 +463,8 @@ html {
     width: 175%;
 }
 .fotoscav3{
-    margin-top: -7rem;
-    margin-left: -4rem;
+    
+    margin-left: -6rem;
     width: 75%;
     z-index: 10;
 }
@@ -472,9 +473,13 @@ html {
     margin-left: -1rem;
 }
 .fotoscav4{
-    margin-top: -8rem;
+    
     margin-right: -4.5rem;
     width: 70%;
+}
+.fotoscav4 img{
+    width: 100%;
+    margin-left: -1rem;
 }
 
 .aside1 {
@@ -941,6 +946,10 @@ footer {
     .arg-venda2 h4{
         font-size:2.4rem;
     }
+    .scav1 h1 {
+        font-size: 2rem;
+        margin-top: .6rem;
+    }
 }
 
 @media (max-width: 834px) {
@@ -968,7 +977,7 @@ footer {
         padding-left: 1.4rem;
     }
     .scav1 h1 {
-        font-size: 3.5rem;
+        font-size: 2rem;
         margin-top: .6rem;
     }
     .scav1 h2 {
@@ -1179,6 +1188,10 @@ footer {
     .cmd-aside1{
         width:55%;
     }
+    .scav1 h1 {
+        font-size: 1.8rem;
+        margin-top: .6rem;
+    }
 }
 
 
@@ -1268,7 +1281,7 @@ footer {
         font-size: 2.5rem;
     }
     .scav1 h1{
-        font-size:3rem;
+        font-size:1.5rem;
     }
     .scav1 h2{
         font-size:1.2rem;
@@ -1422,7 +1435,7 @@ footer {
         height: 98vh;
     }
     .scav1 h1{
-        font-size:8vw;
+        font-size:1.5rem;
     }
     .scav1 h2{
         color: #F8AA16;
