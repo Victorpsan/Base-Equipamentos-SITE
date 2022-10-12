@@ -422,6 +422,7 @@ html {
     width: 70%;
 }
 .fotoscav2 img{
+    margin-left: -3rem;
     width: 117%;
 }
 .esp-list2 {
@@ -489,7 +490,7 @@ html {
     margin: 0 auto;
     border-top:#F8AA16 2px solid;
     border-bottom:#F8AA16 2px solid;
-    margin-top:3rem;
+    margin-top:1rem;
 }
 .aside1 h1 {
     color: #000;
@@ -729,7 +730,17 @@ footer {
 
 /* --- MEDIAS PARA RESPONSIVIDADE --- 1115 e 1086=QUEBRAS DE INFO-TEC*/
 
-         
+
+@media (max-width: 1084px) {
+    .scav1 h1 {
+        font-size: 2rem;
+    }
+    .scav2 h1 {
+
+    font-size: 2rem;
+    }
+
+}
 @media (max-width: 1024px) {
      
     .burger {
@@ -822,21 +833,19 @@ footer {
         font-size: 1.7rem;
     }
     .tec2 li {
-        font-size: .89rem;
         font-stretch: condensed;
         padding: 0;
     }
     .fotoscav3 {
-        margin-top: -3rem;
+       
     }
     .fotoscav3 img {
-        margin-top: -2rem;
+        margin-top: 2rem;
         width: 100%;
     }
     .fotoscav4 img{
         width: 100%;
-        margin-top: 1rem;
-        margin-left: -2rem;
+        
     }
     .aside1 h1{
         font-size:1.7rem;
@@ -919,11 +928,11 @@ footer {
     }
     .fotoscav3 img{
         width: 95%;
-        margin-top: -3rem;
+        
         margin-left: 2.5rem;
     }
     .fotoscav4{
-        margin-top: -8rem;
+        
         margin-right: -2.5rem;
         width: 65%;
     }
@@ -998,7 +1007,7 @@ footer {
         margin-left: -3rem;
     }
     .scav2 h1{
-        font-size: 3.5rem;
+       
     }
     .scav2 h2{
         font-size:1.5rem;
@@ -1015,14 +1024,14 @@ footer {
     }
     
     .fotoscav3{
-        margin-top:-2rem;
+        
     }
     .fotoscav3 img {
         width:93%;
-        margin-top:-2rem;
+        
     }
     .fotoscav4{
-        margin-top: -6rem;
+       
     }
     .aside1 h1{
         font-size:1.5rem;
@@ -1132,7 +1141,7 @@ footer {
         margin-left: .5rem;
     }
     .fotoscav3 img{
-        margin-top: 0rem;
+      
     }
     .scav3 {
         width:90%;
@@ -1145,7 +1154,8 @@ footer {
         margin-right: -2.2rem;
     }
     .fotoscav4 img {
-        margin-left:0;
+        margin-left:2rem;
+        width: 85%;
     }
     .arg-venda{
         margin-top:1.5rem;
@@ -1191,6 +1201,9 @@ footer {
     .scav1 h1 {
         font-size: 1.8rem;
         margin-top: .6rem;
+    }
+    .scav2 h1{
+        font-size: 1.8rem;
     }
 }
 
@@ -1268,6 +1281,28 @@ footer {
     .cmd-aside1{
         width:60%;
     }
+    .scav1 h1{
+        font-size: 1.5rem;
+    }
+    .fotoscav1 img{
+        margin-top: 2rem;
+    }
+    .scav2 h1{
+        font-size: 1.5rem;
+    }
+    .fotoscav2 img{
+        margin-top: 7rem;
+    }
+    .scav3 h1{
+        font-size: 1.5rem;
+    }
+    .fotoscav3 img{
+        margin-top: 5rem;
+        margin-left: 3rem;
+    }
+    .fotoscav4 img{
+        margin-top: 2rem;
+    }
 }
 
 @media (max-width:667px){
@@ -1280,9 +1315,7 @@ footer {
     .equipo h1{
         font-size: 2.5rem;
     }
-    .scav1 h1{
-        font-size:1.5rem;
-    }
+   
     .scav1 h2{
         font-size:1.2rem;
         padding-left:1rem;
@@ -1291,10 +1324,10 @@ footer {
     .fotoscav1 img{
         width:90%;
         margin-left:-1rem;
-        margin-top: .5rem;
+       
     }
     .scav2 h1{
-        font-size:3rem;
+       
     }
     .scav2 h2{
         font-size:1.2rem;
@@ -1302,18 +1335,18 @@ footer {
     .fotoscav2 img{
         width:98%;
         padding:0;
-        margin-top: 1rem;
+       
     }
     .fotoscav3 img{
         width: 90%;
-        margin-top: 3rem;
+       
     }
     .fotoscav4{
         margin-right: -2rem;
     }
     .fotoscav4 img{
         margin-top: 5rem;
-        margin-left: -.3rem;
+        
     }
     .tec1 li{
         padding-left:.79rem;
@@ -1389,7 +1422,7 @@ footer {
         position:unset;
     }
     .redes{
-        margin-bottom:4%;
+        margin-bottom:2%;
         font-size: 3vw;
     }
     .empresa{
@@ -1432,10 +1465,10 @@ footer {
     }
     .scav1{
         flex-direction:column;
-        height: 98vh;
+        height: 76vh;
     }
     .scav1 h1{
-        font-size:1.5rem;
+        font-size:2rem;
     }
     .scav1 h2{
         color: #F8AA16;
@@ -1452,8 +1485,9 @@ footer {
         margin: 0 auto;
     }
     .fotoscav1 img{
-        width:100%;
+        width:85%;
         margin:0 auto;
+        margin-left: 1rem;
     }
     .esp-list1{
         width: 100%;
@@ -1495,10 +1529,10 @@ footer {
     }
     .scav2{
         flex-direction: column;
-        height: 90vh;
+        height: 73vh;
     }
     .scav2 h1{
-        font-size:8vw;
+        font-size:2rem;
     }
     .scav2 h2{
         color: #F8AA16;
@@ -1517,8 +1551,9 @@ footer {
         margin: 0 auto;
     }
     .fotoscav2 img{
-        width: 100%;
+        width: 135%;
         margin: 0 auto;
+        margin-left: -7rem;
     }
     .esp-list2{
         width: 100%;
@@ -1561,17 +1596,19 @@ footer {
         margin: 0 auto;
     }
     .fotoscav3 img{
-        width: 100%;
+        width: 115%;
         margin: 0 auto;
+        margin-left: -3rem;
+        margin-bottom: 3rem;
     }
     .fotoscav4{
         width: 90%;
         margin: 0 auto;
     }
     .fotoscav4 img{
-        width: 100%;
-        margin: 0 auto;
-        margin-top: -3.5rem;
+        width: 78%;
+        margin-top: -2rem;
+        margin-left: 4rem;
     }
     .aside1{
         width:90%;
@@ -1658,6 +1695,26 @@ footer {
     }
 }
 
+@media (max-width:450px){
+    .scav1 h1 {
+        font-size: 1.5rem;
+    }
+    .scav2 h1 {
+        font-size: 1.5rem;
+    }
+    .scav1 {
+        height: 60vh;
+    }
+    .fotoscav2 img{
+        margin-left: -6rem;
+    }
+    .scav2 {
+        height: 59vh;
+    }
+
+}
+
+
 @media (max-width:414px){
     .burger.show-menu {
         right: 30%;
@@ -1695,17 +1752,17 @@ footer {
     .redes{
         font-size: 2.5vw;
         width: 22%;
-        margin-bottom: .5rem;
+        margin-bottom: .2rem;
     }
     .bloco{
         width: 70%;
         margin-bottom: 2rem;
     }
     .scav1{
-        height: 73vh
+        height: 55vh
     }
     .scav2{
-        height:68vh;
+        height:52vh;
     }
     .fotoscav4 img{
         margin-top: -2rem;
@@ -1756,10 +1813,10 @@ footer {
         font-size:100%;
     }
     .scav1 {
-        height: 66vh;
+        height: 50vh;
     }
     .scav2{
-        height:62vh;
+        height:49vh;
     }
     .scav1 h2 {
         font-size: 5vw;
@@ -1767,11 +1824,18 @@ footer {
     .scav2 h2{
         font-size:5vw;
     }
+    .fotoscav2 img{
+        margin-left: -5rem;
+    }
     .scav3 {
         height: 30rem;
     }
     .scav3 h2 {
         font-size: 1.3rem;
+    }
+    .fotoscav4 img{
+        margin-top: -1rem;
+        margin-left: 3rem;
     }
     .tec2 li{
         font-size: .8rem;
@@ -1816,7 +1880,7 @@ footer {
     .redes{
         font-size: 0.6rem;
         width: 25%;
-        margin-bottom: 1rem;
+       
     }
     .bloco{
         width:80%
@@ -1827,17 +1891,14 @@ footer {
     .produto1{
         margin:0;
     }
-    .scav1 {
-        height: 64vh;
-    }
-    .scav2 {
-        height: 60vh;
-    }
+    
     .scav1 h1{
         margin-top: 7px;
+        font-size:1.2rem;
     }
     .scav2 h1{
         margin-top:7px;
+        font-size:1.2rem;
     }
     .aside1 h1 {
         font-size: 1rem;
@@ -1894,19 +1955,25 @@ footer {
         font-size:.8rem;
     }
     .redes{
-        margin-bottom: .5rem;
+        margin-bottom: .05rem;
     }
     .bloco ul li {
         line-height: 1.1rem;
     }
     .scav1 {
-        height: 56vh;
+        height: 43vh;
     }
     .tec1 li{
         padding-left:1.2rem;
     }
     .scav2 {
-        height: 53vh;
+        height: 42vh;
+    }
+    .fotoscav2 img{
+        margin-left: -4rem
+    }
+    .fotoscav3 img{
+        margin-left: -2rem;
     }
     .arg {
         font-size: .7rem;
