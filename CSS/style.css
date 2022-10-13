@@ -836,9 +836,7 @@ footer {
         font-stretch: condensed;
         padding: 0;
     }
-    .fotoscav3 {
-       
-    }
+
     .fotoscav3 img {
         margin-top: 2rem;
         width: 100%;
@@ -1006,9 +1004,6 @@ footer {
     .arg-venda .arg li {
         margin-left: -3rem;
     }
-    .scav2 h1{
-       
-    }
     .scav2 h2{
         font-size:1.5rem;
     }
@@ -1018,20 +1013,11 @@ footer {
     .scav3 h1 {
         font-size: 3.5rem;
     }
-
     .arg-venda2 {
         margin-top: 1.6rem;
     }
-    
-    .fotoscav3{
-        
-    }
     .fotoscav3 img {
-        width:93%;
-        
-    }
-    .fotoscav4{
-       
+        width:93%;  
     }
     .aside1 h1{
         font-size:1.5rem;
@@ -1063,8 +1049,7 @@ footer {
     }
     .cmd2 h1 {
         font-size: 1.3rem;
-    }
-   
+    } 
     .wrapper {
         width: 90%;
     }
@@ -1139,9 +1124,6 @@ footer {
     }
     .fotoscav2 img{
         margin-left: .5rem;
-    }
-    .fotoscav3 img{
-      
     }
     .scav3 {
         width:90%;
@@ -1324,9 +1306,6 @@ footer {
     .fotoscav1 img{
         width:90%;
         margin-left:-1rem;
-       
-    }
-    .scav2 h1{
        
     }
     .scav2 h2{
