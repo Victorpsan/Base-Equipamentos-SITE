@@ -1,0 +1,1966 @@
+@font-face {font-family: "helvetica55roman";
+    src: url("font/helvetica55roman.ttf") format('truetype');}
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+
+/*SETUP*/
+* {
+margin: 0;
+padding: 0;
+list-style: none;
+text-decoration: none;
+/*NAVEGAÇÃO*/
+}
+html {
+    scroll-behavior: smooth;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.burger { 
+    width: 3.5rem;
+    height: 1.8rem;
+    position: absolute;
+    z-index: 50;
+    right: 8.5rem;
+    top: 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    transition: 1s;
+}
+.line {
+    width: 100%;
+    background-color: #ffffff;
+    height: .22rem;
+}
+.show-menu.burger {
+    right: 7rem;
+}
+.show-menu #l1{
+    width: 55%;
+    transform: rotate(45deg);
+}
+.show-menu > #l2{
+    opacity: 0;
+}
+.show-menu > #l3{
+    width: 55%;
+    transform: rotate(-45deg);
+    margin-top: -2rem;
+}
+.menu-nav {
+    height: 1.8rem;
+    position: fixed;
+    top: 2.15rem;
+    right: -40rem;
+    display: flex;
+    align-items: center;
+    transition: right .5s linear;
+}
+.menu-nav.show-menu {
+    right: 12.3rem;
+    position:absolute;
+}
+
+.menu-nav > nav > a { 
+    font-family: helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-left: 1rem;
+    transition: font-weight .5s;
+}
+.home { 
+    padding-right: 1rem;
+}
+.produtos {
+    padding-right: 1rem;
+    border-right: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+}
+.menu-nav > nav > a:hover { 
+    font-weight: bold;
+}
+.menu-nav > nav > a:active, :focus {
+    border-bottom: 2px solid #ffffff;
+}
+
+/*CABEÇALHO*/
+
+.cabeçalho { 
+    height: 65vh;
+    background-image: url("img/fotoBANNER.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-position-y: -21rem;
+   
+}
+.conteiner1 { 
+    height:inherit;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+.logo-cmd1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.logo {
+    background-color: #f8aa16;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: .5rem;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    box-shadow: 1px 1px 5px;
+    opacity: 80%;
+    width:95%;
+}
+.logo img{
+    width: 75%;
+    padding-left: 1.7rem;
+    opacity:unset;
+}
+.cmd1 { 
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 3rem;
+    }
+.cmd1 h1 { 
+    font-family: helvetica, sans serif;
+    line-height: normal;
+ }   
+ .cmd{
+    display: flex;
+    align-items: center;
+    background: #7cc02f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ee034, #30a534);  
+    background: linear-gradient(to right, #2fdb35, #36ac1e); 
+    padding-right: .6rem;
+    border-radius: .3rem;    
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    height: 2.5rem;
+ }
+ .cmd i{
+    font-size: 3rem;
+    border-radius: 2rem;
+    margin-right: .5rem;
+    color: #fff;
+    background: #7cc02f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2ee034, #30a534);  
+    background: linear-gradient(to right, #2fdb35, #36ac1e); 
+    background-size: 2.8rem;
+    
+ }
+ .cmd h1{
+     font-size:1rem;
+     color: #ffffff;
+     font-weight: normal;
+     font-family: helvetica, sans-serif;
+ }
+ .btn{
+     margin-top: -.3rem;
+ }
+.lb1 button { 
+    color:#ffffff;
+    background: #F8AA16;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F8AA16, #fa8e01);  
+    background: linear-gradient(to left, #fa8e01, #f8aa16); 
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem; 
+    cursor: pointer;
+    box-shadow: 1px 1px 3px  #535353;
+    border:0rem none;
+    outline: none;
+    }
+.cmd1 .lb1 button:hover {
+    font-weight: bold;
+}        
+.cmd1 .lb1 button:active {
+    background: #F8AA16;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F8AA16, #fa8e01);  
+    background: linear-gradient(to right, #fa8e01, #f8aa16); 
+        }    
+
+
+/*LINKS PARA REDES SOCIAIS*/
+
+.nav { 
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.redes { 
+    width: 7.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    
+}
+.redes > a { 
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 70%;
+    transition: opacity .5s;
+}
+.redes > a:hover { 
+    opacity: 100%;
+    color: #f8aa16;
+}
+.redes > a:focus, :active {
+    border: none;
+}
+
+/*INFORMAÇÕES DE NEGÓCIO*/
+
+.empresa { 
+    max-width: 1440px;
+    width: 80%;
+    margin: 2rem 10% 2rem 10%;
+}
+.blk-info { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bloco { 
+    width: 25%;
+}
+.bloco > h1 {
+    font-family: helvetica, sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #F8AA16
+}
+.bloco > ul li{
+    list-style: inside url("img/list.png");
+    font-family: helvetica, sans-serif;
+    color: #383838;
+    line-height: 1.5rem;
+    padding-top: .7rem;
+}
+.bloco p{
+    font-family: helvetica, sans-serif;
+    color: #383838;
+    line-height: 1.5rem;
+    padding-top: .7rem;
+
+}
+
+.bloco:nth-child(2) {
+    
+    border-left: 2px solid #F8AA16;
+   
+    padding-left: 3rem;
+}
+.bloco:nth-child(3){
+    border-left: 2px solid #F8AA16;
+    padding-left: 3rem;
+
+}
+
+
+
+/* SESSÃO 2 - PRODUTOS */
+
+.equipo {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.equipo h1{
+    line-height: 3rem;
+    font-family: helvetica, sans-serif;
+    font-size: 4rem;
+    color: #F8AA16;
+}
+.produto1{
+    margin-top: 1rem;
+    background-color: #F8AA16;
+}
+.scav1{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.scav1 h1 {
+    font-family: "helvetica", sans-serif;
+    font-size: 2.5rem;
+    margin-top: .8rem;
+    font-weight: bold;
+}
+.scav1 h2 {
+    width: 30%;
+    padding-left: 3rem;
+    border-left: 2px solid #ffffff;
+    line-height: normal;
+    font-family: helvetica, sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #ffffff;
+    margin-top: .4rem;
+}
+.conteiner2 {
+    width: 80%;
+    margin: 0 auto;
+}
+.p1 {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.fotoscav1 {
+    width: 70%;
+}
+.fotoscav1 img {
+    width: 85%;
+}
+.esp-list1 {
+    width: 30%;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+.tec1 .titulo {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.tec1 li{
+    line-height: 1.5rem;
+    font-family: "Helvetica", sans-serif; 
+    font-style: italic; 
+    color: #383838;                     
+    border-left: 2px solid #F8AA16; 
+    margin-left: -3rem;
+    padding-left: 3rem;
+    font-size: .83rem;
+}
+.arg-venda {
+    margin-top: 5.5rem;
+    margin-bottom:2rem;
+    border-right: 2px solid #F8AA16;
+    margin-right:-1rem;
+
+}
+.arg-venda h4 {
+    line-height: 5rem;
+    font-size: 3rem;
+    color: #F8AA16;
+    font-family: helvetica, sans-serif;
+    font-weight: lighter;
+    margin-left: -3rem;
+}
+.arg-venda .arg li {
+    line-height: 170%;
+    font-family: helvetica, sans-serif;
+    color: #383838;
+    margin-left: -3rem;
+}
+.produto2 {
+    background-color: #F8AA16;
+}
+.scav2 {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.scav2 h1 {
+    font-family: "Helvetica", sans-serif;
+    font-size: 2.5rem;
+    margin-top: .8rem;
+}
+.scav2 h2 {
+    width: 30%;
+    padding-right: 2rem;
+    border-right: 2px solid #ffffff;
+    line-height: normal;
+    font-family: helvetica, sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #ffffff;
+    margin-top: .4rem;
+}
+.conteiner2-2 {
+    width: 80%;
+    margin: 0 auto;
+}
+.p2 {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+}
+.fotoscav2 {
+    width: 70%;
+}
+.fotoscav2 img{
+    margin-left: -3rem;
+    width: 117%;
+}
+.esp-list2 {
+    width: 30%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.tec2 .titulo {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.tec2 li{
+    line-height: 1.5rem;
+    font-family: "Helvetica", sans-serif; 
+    font-style: italic; 
+    color: #383838;                     
+    border-right: 2px solid #F8AA16; 
+    margin-right: -2.1rem;
+    padding-right: 3rem;
+    font-size: .83rem;
+}
+.arg-venda2 {
+    border-left: 2px solid #F8AA16;
+    margin-top: 3rem;
+    margin-bottom:1.5rem;
+    padding-left: 1.5rem;
+}
+.arg-venda2 h4 {
+    line-height: 5rem;
+    font-size: 3rem;
+    color: #F8AA16;
+    font-family: helvetica, sans-serif;
+    font-weight: lighter;
+}
+.arg-venda2 .arg li {
+    line-height: 170%;
+    font-family: helvetica, sans-serif;
+    color: #383838;
+    width: 175%;
+}
+.fotoscav3{
+    
+    margin-left: -6rem;
+    width: 75%;
+    z-index: 10;
+}
+.fotoscav3 img{
+    width: 100%;
+    margin-left: -1rem;
+}
+.fotoscav4{
+    
+    margin-right: -4.5rem;
+    width: 70%;
+}
+.fotoscav4 img{
+    width: 100%;
+    margin-left: -1rem;
+}
+
+.aside1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    border-top:#F8AA16 2px solid;
+    border-bottom:#F8AA16 2px solid;
+    margin-top:1rem;
+}
+.aside1 h1 {
+    color: #000;
+    font-family: helvetica, sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.orcamento {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 auto;
+    margin-top:1.5rem;
+    width:85%;
+}
+.orcamento p {
+    color: #000;
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: helvetica, sans-serif;
+    width: 47%;
+    font-weight: bold;
+}
+
+.cmd-aside1{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:43%;
+}
+.aside1 .cmd h1{
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform:unset;
+}
+.btn .lb1 button:hover {
+    font-weight: bold;
+}        
+.btn .lb1 button:active {
+    background: #F8AA16;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F8AA16, #fa8e01);  
+    background: linear-gradient(to right, #fa8e01, #f8aa16); 
+        }    
+
+/* SESSÃO CONTATO */
+
+.parte3 {
+    margin-top: 3rem;
+}
+
+.contatos {
+    background-color: #F8AA16;
+}
+.titulo-contato {
+    background-color: #ffffff;
+}
+.titulo-contato h1{
+    line-height: normal;
+    font-family: helvetica, sans-serif;
+    font-size: 3rem;
+    color: #F8AA16;
+    padding-left: 10%;
+}
+.infos {
+    background-color: #ffffff;
+    display: flex;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+.ctt {
+    margin-left: 10%;
+    width: 18%;
+}
+.email {
+    border-left: 2px solid #f8aa16;
+    border-right: 2px solid #f8aa16;
+    padding-left: 3rem;
+    padding-right: 5rem;
+}
+.adress {
+    margin-left: 3rem;
+    width: 20%;
+}
+.ctt h1 {
+    font-family: helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #F8AA16;
+    line-height: 2rem;
+}
+.ctt h2 {
+    font-family: helvetica, sans-serif;
+    font-size: .9rem;
+    color: #383838;
+    font-weight: lighter;
+    line-height: normal;
+}
+.ctt h3 {
+        font-family: helvetica, sans-serif;
+        font-size: 1rem;
+        width: 20.5%;
+}
+.formulario {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 2rem;
+}
+.inputs {
+    width:40%;
+}
+.msg {
+    width: 55%;
+}
+.inputs input {
+    width: 100%;
+    height: 1.8rem;
+    margin: .1rem;
+    outline: none;
+    border: none;
+    border-radius: .3rem;
+    padding-left:.5rem;
+}
+.msg input {
+    width: 100%;
+    height: 1.8rem;
+    margin-bottom: .2rem;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+    padding-left:.5rem;
+}
+.msg textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 15.6rem;
+    min-height: 10.6rem;;
+    height: 10.6rem;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+    padding-left:.5rem;
+    padding-top: 1rem;
+}
+.btn-send {
+    background-color: #27ca2c;
+    padding: .5rem 2rem;
+    border-radius: .2rem;
+    border: none;
+    box-shadow: 1px 1px 3px #383838;
+    outline: none;
+    cursor: pointer;
+    color:#ffffff
+}
+.aside2 {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.simbolo-marca {
+    align-self:flex-end;
+}
+.simbolo-marca img {
+    margin-bottom: -.2rem;
+    width: 60%;
+}
+.cmd-aside2{
+    display: flex;
+    margin-top:1.5rem;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    align-items: flex-end;
+}
+  
+footer {
+    background-color: #ffffff;
+}  
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.img-marca1 img{
+    width: 54%;
+    margin-top: .3rem;
+}
+
+.cr h1 {
+    font-family: helvetica, sans-serif;
+    font-size: .7rem;
+    font-weight: lighter;
+    line-height: normal;
+    color: #383838
+}
+.redes1 {
+    display: flex;
+    justify-content: space-between;
+    width: 9%;
+    color: #000;
+}
+.redes1 > a { 
+    text-decoration: none;
+    color: #000;
+    opacity: 35%;
+    transition: opacity .5s;
+}
+.redes1 > a:hover { 
+    opacity: 100%;
+}
+.redes1 > a:focus, :active {
+    border: none;
+}
+#link-topo {
+    position: fixed;
+    right: 2.5%;
+    bottom: 3%;
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: #F8AA16;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-radius: .3rem;
+    box-shadow: 1px 1px 3px #383838;
+    z-index:222;
+    opacity: 90%;
+
+}
+
+/* --- MEDIAS PARA RESPONSIVIDADE --- 1115 e 1086=QUEBRAS DE INFO-TEC*/
+
+
+@media (max-width: 1084px) {
+    .scav1 h1 {
+        font-size: 2rem;
+    }
+    .scav2 h1 {
+
+    font-size: 2rem;
+    }
+
+}
+@media (max-width: 1024px) {
+     
+    .burger {
+        right: 10%;
+    }
+    .burger.show-menu {
+        right: 7.5%;
+        width: 4%;
+    }
+    .menu-nav.show-menu {
+        right: 13%;
+    }
+    .menu-nav > nav > a {
+        font-size: 1rem;
+    }
+    .cabeçalho{
+        background-position-y: -10rem;
+    }
+    .logo-cmd1{
+        align-items: center;
+    }
+    .cmd1{
+        margin-bottom: 4rem;
+    }
+    .logo{
+        width:80%;
+        padding-left: .4rem;
+    }
+    .cmd h1{
+        font-weight: bolder;
+    }
+    .empresa{
+        margin-top: 1.5rem;
+    }
+    .bloco ul li {
+        font-size: .94rem;
+    }
+    .equipo {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+    }
+    .produto1 {
+        margin-top: .5rem;
+    }
+    .equipo h1 {
+        font-size: 3rem;
+    }
+    .scav1 h1 {
+        margin-top: .7rem;
+    }
+    .scav1 h2 {
+        padding-left: 2rem;
+        font-size: 1.7rem;
+        margin-top: .1rem;
+    }
+    .fotoscav1 img{
+        width: 75%;
+    }
+    .esp-list1 {
+        padding-top: 1.5rem;
+    }
+    .tec1 li {
+        margin-left: -2rem;
+        padding-left: 2rem;
+        font-stretch: condensed;
+    }
+    .arg-venda {
+        margin-top: 2rem;
+        margin-right: -1rem;
+        width: 120%;
+    }
+    .arg-venda h4 {
+        line-height: 3rem;
+        font-size: 2.8rem;
+        margin-left: -2rem;
+        margin-bottom: 1rem;
+    }
+    .arg-venda .arg li {
+        margin-left: -2rem;
+        margin-right: 0;
+    }
+    .produto2{
+        margin-top: 1rem;
+    }
+    .scav2 h1{
+        margin-top: .7rem;
+    }
+    .scav2 h2 {
+        font-size: 1.7rem;
+    }
+    .tec2 li {
+        font-stretch: condensed;
+        padding: 0;
+    }
+
+    .fotoscav3 img {
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .fotoscav4 img{
+        width: 100%;
+        
+    }
+    .aside1 h1{
+        font-size:1.7rem;
+    }
+    .esp-list2 {
+        padding-top: 1.5rem;
+    }
+    .arg-venda2 {
+        width: 110%;
+        margin-top: 1.5rem;
+    }
+    .arg-venda2 h4 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    
+    
+    .orcamento p {
+        font-size: 1.2rem;
+        margin-left: 5%;
+    }
+    .cmd-aside1{
+        margin-right:5%;
+    }
+    .orcamento .orc button {
+        padding: 1.5rem 10rem;
+    }
+    .parte3 {
+        margin-top: 4rem;
+    }
+    .simbolo-marca img {
+        margin-bottom: -.25rem;
+    }
+    .ctt h2 {
+        font-size:.8rem;
+    }
+    .cr {
+        width: 35%;
+    }
+    .redes1 {
+        width: 12%;
+    }
+    
+}
+
+@media (max-width: 990px) {
+    .bloco > h1{
+        font-size:1.5rem;
+    }
+    .bloco ul li{
+        font-size:.85rem;
+    }
+    .equipo{
+        width: 90%;
+    }
+    .scav1{
+        width:90%;
+    }
+    .tec1 li{
+        margin-left: -2.05rem;
+    }
+    .arg-venda{
+        width:112%;
+        margin-top:3rem;
+    }
+    .arg-venda h4 ul{
+        font-size:90%;
+    }
+    .conteiner2{
+        width:90%;
+    }
+    .scav2{
+        width:90%;
+    }
+    .conteiner2-2{
+        width:90%;
+    }
+    .arg-venda2{
+        margin-top:3rem;
+    }
+    .fotoscav3 img{
+        width: 95%;
+        
+        margin-left: 2.5rem;
+    }
+    .fotoscav4{
+        
+        margin-right: -2.5rem;
+        width: 65%;
+    }
+    
+    .aside1 .cmd h1 {
+        font-size: .8rem;
+    }
+
+}
+@media (max-width:912px){
+    .cabeçalho{
+        background-position-y: -7rem;
+    }
+    .arg{
+        font-size:90%;
+    }
+    .arg-venda h4{
+        font-size:2.4rem;
+    }
+    .arg-venda2 h4{
+        font-size:2.4rem;
+    }
+    .scav1 h1 {
+        font-size: 2rem;
+        margin-top: .6rem;
+    }
+}
+
+@media (max-width: 834px) {
+    .burger.show-menu {
+        width: 5%;
+    }
+    .menu-nav.show-menu {
+        right: 15%;
+    }
+    .menu-nav > nav > a {
+        font-size: .8rem;
+    }
+    .cabeçalho{
+        background-position-y: -4rem;
+    }
+    .redes {
+        font-size: 1.05rem;
+        justify-content: space-evenly;
+    }
+    .nav {
+        position: absolute;
+        right: 10%;
+    }
+    .logo img{
+        padding-left: 1.4rem;
+    }
+    .scav1 h1 {
+        font-size: 2rem;
+        margin-top: .6rem;
+    }
+    .scav1 h2 {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+    .fotoscav1 img {
+        width: 80%;
+    }
+    .tec1 li {
+        margin-left: -3rem;
+    }
+    .arg-venda h4 {
+        margin-left: -3rem;
+        margin-bottom: .5rem;
+    }
+    .arg-venda .arg li {
+        margin-left: -3rem;
+    }
+    .scav2 h2{
+        font-size:1.5rem;
+    }
+    .scav3 h2 {
+        font-size: 1.5rem;
+    }
+    .scav3 h1 {
+        font-size: 3.5rem;
+    }
+    .arg-venda2 {
+        margin-top: 1.6rem;
+    }
+    .fotoscav3 img {
+        width:93%;  
+    }
+    .aside1 h1{
+        font-size:1.5rem;
+    }
+    .orcamento h1 {
+        font-size: 1.5rem;
+    }
+    .orcamento p {
+        font-size:1rem;
+    }
+    .cmd-aside1{
+        width:50%;
+    }
+    .titulo-contato h1 {
+        padding-left: 5%;
+    }
+    .ctt {
+        margin-left: 5%;
+    }
+    .email {
+        padding-left: 2rem;
+        padding-right: 6rem;
+    }
+    .formulario {
+        width: 90%;
+    }
+    .aside2 {
+        width: 90%;
+    }
+    .cmd2 h1 {
+        font-size: 1.3rem;
+    } 
+    .wrapper {
+        width: 90%;
+    }
+    .cr h1 {
+        font-size: .6rem;
+    }
+}
+@media (max-width:812px){
+    .logo img{
+        padding-left:1.6rem;
+    }
+.cmd h1{
+    font-size: .8rem;
+}
+    .fotoscav2 img{
+        width: 95%;
+        margin-left: 1.5rem;
+        margin-top: 0.5rem;
+    }
+    .arg-venda{
+        margin-top:1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .burger{
+        right: 5%;
+    }
+    .burger.show-menu{
+        right: 5%;
+    }
+    .menu-nav.show-menu{
+        right: 12%;
+        top: 5.25%;
+    }
+    .cabeçalho{
+        background-position-y: -2rem;
+    }
+    .conteiner1{
+        width:90%;
+    }
+    
+    .logo{
+        width:75%;
+    }
+    .logo img{
+        padding-left: 1.5rem;
+    }
+    .cmd1{
+        margin-bottom:4.5rem;
+    }
+    .nav{
+        right: 5%;
+    }
+    .redes{
+        margin-bottom:1.5rem;
+    }
+    .empresa{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+    }
+    .bloco > h1{
+        font-size:1.2rem;
+    }
+    .bloco ul li{
+        font-size:.8rem;
+        font-stretch: condensed;
+    }
+    .fotoscav1 img{
+        width: 85%;
+    }
+    .fotoscav2 img{
+        margin-left: .5rem;
+    }
+    .scav3 {
+        width:90%;
+    }
+    .tec2 li {
+        font-size: .8rem;        
+    }
+    .fotoscav4{
+        width:70%;
+        margin-right: -2.2rem;
+    }
+    .fotoscav4 img {
+        margin-left:2rem;
+        width: 85%;
+    }
+    .arg-venda{
+        margin-top:1.5rem;
+    }
+    .arg-venda2 .arg li {
+        font-size: .9rem;
+    }
+    .orcamento .orc button {
+        margin-top: 1rem;
+    }
+    .infos {
+        align-items: initial;
+    }
+    .cr {
+        width: 40%;
+    }
+    .cr h1{
+        font-size: .65rem;
+    }
+    .redes1 {
+        width: 13%;
+    }
+}
+@media(max-width:752px){
+    .cabeçalho{
+        background-position-y: -1rem;
+    }
+    .arg-venda{
+        font-size:95%;
+    }
+    .arg-venda2{
+        font-size:95%;
+    }
+    .arg-venda h4{
+        font-size:2.2rem;
+    }
+    .arg-venda2  h4{
+        font-size:2.2em;
+    }
+    .cmd-aside1{
+        width:55%;
+    }
+    .scav1 h1 {
+        font-size: 1.8rem;
+        margin-top: .6rem;
+    }
+    .scav2 h1{
+        font-size: 1.8rem;
+    }
+}
+
+
+@media (max-width:721px){
+    .burger{
+        right:5%;
+    }
+    .burger.show-menu{
+        right:2%;
+    }
+    .menu-nav {
+        width: 20%;
+        top: 6rem;
+        right: -20rem;
+    }
+    .menu-nav nav {
+        line-height: 1.5rem;
+        text-align: right;
+    }
+    .menu-nav.show-menu {
+        width: 15%;
+        top: 6rem;
+        right: 6%;
+    }
+    .menu-nav.show-menu nav {
+        line-height: 1.5rem;
+        text-align: right;
+    }
+    .menu-nav.show-menu .home, .produtos, .contato {
+        border: 0;
+        padding: 0;
+    }
+    .conteiner1{
+        width:90%;
+    }
+    
+    .logo{
+        padding-left:unset;
+    }
+    .cmd1{
+        margin-bottom:5rem;
+    }
+    .cmd1 h1 {
+        font-size: .95rem;
+        font-stretch: condensed;
+    }
+    .nav{
+        right:4%;
+    }
+    .empresa{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+    }
+    .tec1 li{
+        padding-left:1.5rem;
+    }
+    .arg-venda{
+        margin-right: -1rem;
+    }
+    .arg-venda2{
+        margin-top: 2rem;
+    }
+    .orcamento{
+        width: 100%;
+    }
+    .orcamento h1{
+        font-size: 1.3rem;
+    }
+    .orcamento .orc button{
+        padding: 1rem 5rem;
+        font-size: 1.2rem;
+    }
+    .cmd-aside1{
+        width:60%;
+    }
+    .scav1 h1{
+        font-size: 1.5rem;
+    }
+    .fotoscav1 img{
+        margin-top: 2rem;
+    }
+    .scav2 h1{
+        font-size: 1.5rem;
+    }
+    .fotoscav2 img{
+        margin-top: 7rem;
+    }
+    .scav3 h1{
+        font-size: 1.5rem;
+    }
+    .fotoscav3 img{
+        margin-top: 5rem;
+        margin-left: 3rem;
+    }
+    .fotoscav4 img{
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width:667px){
+    .cabeçalho{
+        background-position-y: 0rem;
+    }
+    .cmd1 h1{
+        font-size: .85rem;
+    }
+    .equipo h1{
+        font-size: 2.5rem;
+    }
+   
+    .scav1 h2{
+        font-size:1.2rem;
+        padding-left:1rem;
+        margin-right:2rem;
+    }
+    .fotoscav1 img{
+        width:90%;
+        margin-left:-1rem;
+       
+    }
+    .scav2 h2{
+        font-size:1.2rem;
+    }
+    .fotoscav2 img{
+        width:98%;
+        padding:0;
+       
+    }
+    .fotoscav3 img{
+        width: 90%;
+       
+    }
+    .fotoscav4{
+        margin-right: -2rem;
+    }
+    .fotoscav4 img{
+        margin-top: 5rem;
+        
+    }
+    .tec1 li{
+        padding-left:.79rem;
+        font-size:.8rem;
+    }
+    .arg-venda{
+        font-size:85%;
+        margin-top:1rem;
+    }
+    .arg-venda h4{
+        font-size:2rem;
+    }
+    .arg-venda2{
+        margin-top:1rem;
+    }
+   .arg-venda2 .arg li{
+       font-size:90%;
+   }
+    .arg-venda2 h4{
+        font-size:2rem;
+    }
+    .aside1 h1{
+        font-size: 1.2rem;
+    }
+    .cmd-aside1{
+        width: 70%;
+    }
+    .orcamento p {
+        font-size: .8rem;
+    }
+    .ctt h2{
+        font-size: .75rem;
+    }
+}
+@media (max-width:568px){
+    .burger{
+        top: .5rem;
+        width: 5%;
+    }
+    .burger.show-menu {
+        right: 20%;
+        width: 7%;
+    }
+    .menu-nav{
+        top:9%;
+    }
+    .menu-nav.show-menu {
+        right:12%;
+        top: 9%;
+    }
+    .cabeçalho{
+        height: 67vh;
+    }
+    .conteiner1{
+        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .logo{
+        width:45%;
+    }
+    .logo img{
+        padding-left: 1.8rem;
+    }
+    .cmd1{
+        margin: 0;
+        margin-top:5%;
+    }
+    .nav{
+        flex-direction: row;
+        justify-content: center;
+        height: fit-content;
+        position:unset;
+    }
+    .redes{
+        margin-bottom:5px;
+        font-size: 3vw;
+    }
+    .empresa{
+        margin-top: 1.5rem;
+    }
+    .blk-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bloco{
+        width:65%;
+        margin-bottom: 2.5rem;
+    }
+    .bloco h1{
+        font-size:6vw;
+        padding-left: 1rem;
+    }
+    .bloco ul li{
+        font-size:3vw;
+        font-stretch: normal;
+        padding-left: 1rem;
+    }
+    .bloco:nth-child(2) {
+        border: none;
+        padding: 0;
+    }
+    .bloco:nth-child(3){
+        border: none;
+        padding: 0;
+    }
+    .produto1{
+        height: 12vw;
+    }
+    .equipo{
+        margin:0 auto;
+    }
+    .equipo h1{
+        text-align:center;
+        font-size:8vw;
+    }
+    .scav1{
+        flex-direction:column;
+        height: 82vh;
+    }
+    .scav1 h1{
+        font-size:2rem;
+    }
+    .scav1 h2{
+        color: #F8AA16;
+        width: auto;
+        margin: 0 auto;
+        font-size: 4.2vw;
+    }
+    .p1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .fotoscav1{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .fotoscav1 img{
+        width:80%;
+        margin:0 auto;
+        margin-left: 1rem;
+    }
+    .esp-list1{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .tec1{
+        margin-top: .5rem;
+    }
+    .tec1 li{
+        padding-left: 2rem;
+        margin: 0 auto;
+        margin-left: 18%;
+        font-size: 3vw;
+        line-height: 5.4vw;
+    }
+    .arg-venda{
+        font-size: 100%;
+        margin-top: 1.5rem;
+        width: 100%;
+    }
+    .arg-venda h4{
+        font-size: 8.4vw;
+        margin: 0 auto;
+        text-align: center;
+        padding-right: 5vw;
+        line-height:8vw;
+    }
+    .arg{
+        font-size: 3vw;
+        padding-left: 20.5%;
+        margin-top: 2vw;
+    }
+    .arg-venda .arg li{
+        margin:0 auto;
+    }
+    .produto2{
+        height: 12vw;
+        margin: 0 auto;
+    }
+    .scav2{
+        flex-direction: column;
+        height: 80vh;
+    }
+    .scav2 h1{
+        font-size:2rem;
+    }
+    .scav2 h2{
+        color: #F8AA16;
+        width: auto;
+        margin: 0 auto;
+        font-size: 4.2vw;
+        padding: 0;
+        padding-left: 1rem;
+    }
+    .p2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .fotoscav2{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .fotoscav2 img{
+        width: 135%;
+        margin: 0 auto;
+        margin-left: -7rem;
+    }
+    .esp-list2{
+        width: 100%;
+        margin: 0 auto;
+        margin-top:1.5rem;
+    }
+    .tec2{
+        margin-top: .5rem;
+    }
+    .tec2 li{
+        padding-left: 2rem;
+        margin: 0 auto;
+        margin-left: 18%;
+        font-size: 3vw;
+        line-height: 5.4vw;
+        border-left: 2px solid #F8AA16;
+        border-right: none;
+    }
+    .arg-venda2{
+        font-size: 100%;
+        margin-top: 1.5rem;
+        width: 100%;
+        border-right: 2px solid #F8AA16;
+        border-left: none;
+        padding: 0;
+    }
+    .arg-venda2 h4{
+        font-size: 8.4vw;
+        margin: 0 auto;
+        text-align: center;
+        padding-right: 5vw;
+        line-height:8vw;
+    }
+    .arg-venda2 .arg li{
+        margin: 0 auto;
+        width:100%;
+    }
+    .fotoscav3{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .fotoscav3 img{
+        width: 115%;
+        margin: 0 auto;
+        margin-left: -3rem;
+        margin-bottom: 3rem;
+    }
+    .fotoscav4{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .fotoscav4 img{
+        width: 74%;
+        margin-top: -2rem;
+        margin-left: 5rem;
+    }
+    .aside1{
+        width:90%;
+        margin-top: 1.5rem;
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
+    .cmd-aside1{
+        margin: 0 auto;
+    }
+    .cmd-aside1 .cmd{
+        width:auto;
+    }
+    .orcamento{
+        flex-direction: column;
+        margin-bottom: 3vw;
+        margin-top: 3vw;
+    }
+    .orcamento p{
+        width:80%;
+        font-size:3vw;
+        margin-bottom: 4vw;
+        font-weight: normal;
+    }
+    .parte3{
+        margin-top:2rem;
+    }
+    .titulo-contato h1{
+        text-align: center;
+        font-size: 8vw;
+        padding:0;
+    }
+    .infos{
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+    .ctt{
+        width: 90%;
+        margin: 0 auto;
+        border: none;
+        padding: 0;
+        text-align: center;
+        margin-top: .5rem;
+    }
+    .ctt h1{
+        font-size:4.2vw;
+    }
+    .formulario{
+        flex-direction:column-reverse;
+    }
+    .msg{
+        width:100%;
+    }
+    .inputs{
+        width:100%;
+        margin-bottom: .5rem;
+    }
+    .aside2{
+        flex-direction:column-reverse;
+    }
+    .simbolo-marca{
+        align-self: flex-start;
+        width:55%;
+    }
+    .simbolo-marca img{
+        width:51.1%;
+    }
+    .cmd-aside2{
+        align-items: center;
+    }
+    #link-topo{
+        bottom: 11%;
+    }
+    .img-marca1{
+        width:28%;
+    }
+    .img-marca1 img{
+        width:100%;
+    }
+    .redes1{
+        font-size: .7rem;
+        width: 15%;
+    }
+}
+@media (max-width:450px) {
+    .scav1 h1 {
+        font-size: 1.5rem;
+    }
+    .scav2 h1 {
+        font-size: 1.5rem;
+    }
+    .scav1 {
+        height: 65vh;
+    }
+    .fotoscav2 img{
+        margin-left: -6rem;
+    }
+    .scav2 {
+        height: 63vh;
+    }
+}
+
+
+@media (max-width:414px) {
+    .burger.show-menu {
+        right: 30%;
+        width: 8%;
+    }
+    .menu-nav.show-menu {
+        right: 26%;
+    }
+    .menu-nav.show-menu nav {
+        line-height: 1.8rem;
+    }
+    .menu-nav > nav > a {
+        font-size: 1rem;
+    }
+    .logo-cmd1.show-menu{
+        display:block;
+    }
+    .cabeçalho {
+        height: 50vh;
+    }
+    .logo{
+        width:50%;
+        padding-top: 1.2rem;
+        padding-bottom: 1rem;
+    }
+    .logo img{
+        padding-left: 1.34rem;
+    }
+    .cmd1{
+        margin-top:.5rem;
+    }
+    .lb1 button{
+        padding: .8rem 1.5rem;
+    }
+    .redes{
+        font-size: 2.5vw;
+        width: 22%;
+        margin-bottom: .2rem;
+    }
+    .bloco{
+        width: 70%;
+        margin-bottom: 2rem;
+    }
+    .scav1{
+        height: 60vh
+    }
+    .scav2{
+        height:58vh;
+    }
+    .fotoscav4 img{
+        margin-top: -2rem;
+    }
+}
+
+
+
+@media (max-width: 375px) {
+    .burger.show-menu {
+        right: 34%;
+    }
+    .menu-nav.show-menu {
+        right: 30%;
+    }
+    .cabeçalho {
+        height: 46vh;
+    }
+    .logo{
+        padding-top: 1rem;
+        padding-bottom: .8rem;
+    }
+    .cmd{
+        height: 2rem;
+    }
+    .bloco h1{
+        font-size:7vw;
+    }
+    .bloco ul li {
+        font-size: .8rem;
+    }
+    .tec1 li{
+        font-size: .8rem;
+        line-height: 6.4vw;
+        margin-left: 12.5%;
+    }
+    .equipo h1{
+        font-size: 2em;
+        text-align: center;
+    }
+    .arg-venda{
+        margin-left: -4vw;
+    }
+    .arg{
+        font-size:.8rem;
+    }
+    .arg-venda2 .arg li{
+        font-size:100%;
+    }
+    .scav1 {
+        height: 55vh;
+    }
+    .scav2{
+        height:55vh;
+    }
+    .scav1 h2 {
+        font-size: 5vw;
+    }
+    .scav2 h2{
+        font-size:5vw;
+    }
+    .fotoscav2 img{
+        margin-left: -5rem;
+    }
+    .scav3 {
+        height: 30rem;
+    }
+    .scav3 h2 {
+        font-size: 1.3rem;
+    }
+    .fotoscav4 img{
+        margin-top: -1rem;
+        margin-left: 3rem;
+    }
+    .tec2 li{
+        font-size: .8rem;
+        line-height: 6.4vw;
+        margin-left: 12.5%;
+    }
+    .arg-venda2{
+        margin-left: -4vw;
+    }
+    .orcamento p{
+        font-size: .8rem;
+        text-align: center;
+    }
+    .orcamento h1 {
+        font-size: 1.5rem;
+    }
+    .orcamento .orc button {
+        line-height: normal;
+        padding: 1.5rem 3rem;
+        font-size: 1rem;
+    }
+    .cmd-aside1{
+        width: 90%;
+    }
+    .formulario{
+        width:80%;
+    }
+}
+@media (max-width: 360px) {
+    .burger {
+        right: 5%;
+        width: 5%;
+        top: .5rem;
+    }
+    .burger.show-menu{
+        right: 34%;
+        width: 10%;
+    }
+    .menu-nav.show-menu {
+        right: 32%;
+    }
+    .redes{
+        font-size: 0.6rem;
+        width: 25%;
+       
+    }
+    .bloco{
+        width:80%
+    }
+    .bloco ul li {
+        line-height: 1.2rem;
+    }
+    .produto1{
+        margin:0;
+    }
+    
+    .scav1 h1{
+        margin-top: 7px;
+        font-size:1.2rem;
+    }
+    .scav2 h1{
+        margin-top:7px;
+        font-size:1.2rem;
+    }
+    .aside1 h1 {
+        font-size: 1rem;
+    }
+    .cr h1 {
+        font-size: .5rem;
+    }
+}
+    
+
+@media (max-width: 320px) {
+    .menu-nav {
+      top:7%;
+    }
+    .menu-nav.show-menu {
+        top: 7%;
+        right: 36%;
+    }
+    .menu-nav.show-menu nav a {
+        font-size: 1rem;
+    }
+    .nav.show-menu {
+        right: 26%;
+    }
+    .conteiner1 {
+        padding-top: 0;
+    }
+    .burger.show-menu{
+        right: 37%;
+    }
+    .burger{
+        top: .2rem;
+        right: 1rem;
+        width: 5%;
+    }
+    .cabeçalho {
+        height: 32vh;
+    }
+    .logo {
+        padding-top: .8rem;
+        padding-bottom: .5rem;
+    }
+    .logo img {
+        padding-left: 1.05rem;
+    }
+    .cmd {
+        height: 1.8rem;
+    }
+    .cmd i {
+        font-size: 2rem;
+    }
+    .lb1 button {
+        padding: .6rem 1.2rem;
+        font-size:.8rem;
+    }
+    .redes{
+        margin-bottom: .05rem;
+    }
+    .bloco ul li {
+        line-height: 1.1rem;
+    }
+    .scav1 {
+        height: 43vh;
+    }
+    .tec1 li{
+        padding-left:1.2rem;
+    }
+    .scav2 {
+        height: 42vh;
+    }
+    .fotoscav2 img{
+        margin-left: -4rem
+    }
+    .fotoscav3 img{
+        margin-left: -2rem;
+    }
+    .arg {
+        font-size: .7rem;
+    }
+    .tec2 li {
+        padding-left: 1.2rem;
+    }
+    .ctt h1{
+        font-size: 1rem;
+    }
+    .redes1 {
+        font-size: .5rem;
+        width: 17%;
+    }
+    #link-topo {
+        
+        bottom: 7%;
+    }
+}
