@@ -89,7 +89,7 @@ html {
 
 .cabeçalho { 
     height: 65vh;
-    background-image: url("img/fotoBANNER.png");
+    background-image: url("img/fotoBANNER-1440.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -332,7 +332,7 @@ html {
     width: 70%;
 }
 .fotoscav1 img {
-    width: 85%;
+    width: 70%;
 }
 .esp-list1 {
     width: 30%;
@@ -416,8 +416,8 @@ html {
     width: 70%;
 }
 .fotoscav2 img{
-    margin-left: -3rem;
-    width: 117%;
+    margin-left: 3rem;
+    width: 100%;
 }
 .esp-list2 {
     width: 30%;
@@ -464,18 +464,15 @@ html {
     z-index: 10;
 }
 .fotoscav3 img{
-    width: 100%;
-    margin-left: -1rem;
+    width: 75%;
+    margin-left: 1rem;
 }
 .fotoscav4{
     
-    margin-right: -4.5rem;
+    margin-right: -14.5rem;
     width: 70%;
 }
-.fotoscav4 img{
-    width: 100%;
-    margin-left: -1rem;
-}
+
 
 .aside1 {
     padding-top: 2rem;
@@ -1439,6 +1436,10 @@ footer {
     .scav1{
         flex-direction:column;
         height: 82vh;
+    }
+    div#m1 {
+        height: 44vh;
+
     }
     .scav1 h1{
         font-size:2rem;
