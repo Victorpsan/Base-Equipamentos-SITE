@@ -140,7 +140,7 @@ html {
  }   
  .cmd{
     display: flex;
-    align-items: center;
+    
     background: #7cc02f;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2ee034, #30a534);  
     background: linear-gradient(to right, #2fdb35, #36ac1e); 
@@ -1436,10 +1436,6 @@ footer {
     .scav1{
         flex-direction:column;
         height: 82vh;
-    }
-    div#m1 {
-        height: 44vh;
-
     }
     .scav1 h1{
         font-size:2rem;
