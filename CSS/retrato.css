@@ -43,7 +43,7 @@ header {
 }
 #logo1 {
     background-color: var(--cor1);
-    padding: 20px 20px 25px 20px;
+    padding: 20px 0px 25px 0px;
     border-radius: 0px 0px 15px 15px;
     width: 230px;
     margin: auto;
@@ -51,17 +51,17 @@ header {
     box-shadow: 1px 1px 5px; 
     opacity: 80%;
 }
-#logo1 > img {
+#logo1 img {
     opacity: unset;
+    width: 65%;
 
 }
 .cmd {
-    display: flex;
-    width: 275px;
+    display: inline-flex;
+    width: 250px;
     align-items: center;
     background: linear-gradient(to right, #2fdb35, #36ac1e);
     border-radius: 5px;
-    margin-top: 20px;
 }
 .cmd i {
     padding: 0px 8px 0px 14px;
@@ -70,14 +70,15 @@ header {
 }
 .cmd p {
     color:#fff;
+    font-size: .9em;
 }
-#clique {
+.clique {
     margin-bottom:30px;
 }
-#clique > a {
+.clique > a {
     background-color: var(--cor1);
 }
-#clique > a > button {
+.clique > a > button {
     border-radius: 25px;
     background: var(--cor1);
     background: linear-gradient(to left, #fa8e01, #f8aa16);
@@ -90,16 +91,33 @@ header {
 }
 nav {
     display: inline-flex;
+    
+}
+
+nav:hover {
+    background-color: var(--cor1);
+    opacity: 70%;
+    border-radius: 7px;
+    transition: .5s;
 }
 nav > p {
     color: #fff;
     margin: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.415);
+}
+nav p:hover {
+    background-color: var(--cor1);
+    opacity: 95%;
+    font-weight: bolder;
+    text-decoration: underline;
+    transition: .5s;
 }
 
 .redes {
-    display: flex;
+    display: inline-flex;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    margin-top: 30px;
 }
 .redes > a {
     text-decoration: none;
@@ -120,11 +138,8 @@ nav > p {
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin-bottom: 30px;
     margin:auto;
     align-items: center;
-    margin-bottom: 30px;
-    
 }
 .publi {
     width: 95%;
@@ -132,14 +147,15 @@ nav > p {
 }
 .publi > h1 {
     color: var(--cor1);
-   
+    font-size: 1.5em;
 }
 .publi > ul {
     color: var(--cor2);
     text-align: left;
     line-height: 2em;
-    font-weight: lighter;
-    margin-left: 15%;
+    font-size: .8em;
+    padding-left: 20%;
+    width: 75%;
 }
 
 /*
@@ -156,6 +172,7 @@ nav > p {
 .produto > h1 {
     padding: 15px 0px;
     background-color: var(--cor1);
+    font-size: 1.4em;
 }
 #p1 > img {
     width: 90%;
@@ -164,6 +181,7 @@ nav > p {
 .produto > h2 {
     font-weight: lighter;
     color:var(--cor1);
+    font-size: 1em;
 }
 
 .infotecp {
@@ -171,25 +189,19 @@ nav > p {
     border-left: 2px solid var(--cor1);
     color: var(--cor2);
     font-style: italic;
-    font-family: var(--fonte1) sans-serif;
-    font-stretch: condensed;
     line-height: 25px;
     width:70%;
     margin: auto;
-    font-size: .95em;
-    font-weight: lighter;
+    font-size: .8em;
 }
 #p2 > img {
     width: 100%;
-    margin: auto;
 }
 #p3 > img {
     width: 95%;
-    margin: auto;
 }
 #p4 > img {
     width: 90%;
-    margin: auto;
 }
 
 /* 
@@ -203,17 +215,15 @@ nav > p {
     flex-direction: column;
     align-items: center;
     border: 2px solid var(--cor1);
-    border-radius: 3px; 
 }
-#serviço > h1 {
-    font-size: 1.6em;
+#serviço  h1 {
+    font-size: 1.2em;
     font-weight: normal;
-    width: 80%;
+    width: 90%;
 }
 #serviço > p {
-    width: 85%;
-
-    font-weight:lighter;
+    width: 80%;
+    font-size: .8em;
 }
 
 /*
@@ -225,7 +235,18 @@ nav > p {
 }
 #contato > p {
     color: var(--cor2);
+    width: 90%;
+    margin: auto;
+    font-size: smaller;
 }
+#cmd2 {
+    font-size: .9em;
+    width: 225px;
+}
+#cmd2 i {
+    padding: 0px 8px 0px 12px;
+}
+
     /* 
             FORMULÁRIO
     */
@@ -265,9 +286,12 @@ textarea {
     padding-left:.5em;
     padding-top: 1em;
 }
-
+form div{
+    width: 80%;
+    margin:auto
+}
 form button {
-    width: 200px;
+    width: 150px;
     background-color: #27ca2c;
     padding: .7em 1.5em;
     border-radius: .2em;
@@ -286,11 +310,16 @@ form button {
     margin: auto;
 }
 
+#clique3 {
+    margin-bottom: 5px;
+}
+
 #contato img {
-    display: flex;
-    margin-left:2%;
-    width: 25%;
-    margin-left: 3%;
+    position: relative;
+    right: 38%;
+    margin: 10px 10px -4px 10px;
+    width: 20%;
+    
 }
 
 /* 
@@ -299,34 +328,42 @@ form button {
 
 footer {
     display: flex;
-    margin:auto;
     background-color: var(--cor1);
     max-width: 1200px;
     max-height: 150px;
-    min-height: 40px;
+    height: 50px;
 }
 
 footer img {
+    position: relative;
     width: 25%;
     padding: 10px;
-    margin-left: 2%;
 }
 
 footer h1 {
-    font-size: 8pt;
-    width: 40%;
+    font-size: 6pt;
     margin: auto;
     opacity: 50%;
+    font-weight: lighter;
 }
 
 #redesf {
     margin: auto;
 }
 #redesf a {
-    
-    text-decoration: none;
-    color: #fff;
-    opacity: 70%;
-    transition: opacity .5s;
-    margin: 5px; 
+    font-size:x-small;
+    margin: 5px;
+}
+
+@media (min-width: 425px) {
+   .publi > ul {
+    padding-left: 25%;
+   }
+
+   .produto h2 {
+    font-size: 1.3em;
+   }
+   .infotecp {
+    width: 65%;
+   }
 }
