@@ -55,7 +55,7 @@ header {
     opacity: unset;
 
 }
-#cmd1 {
+.cmd {
     display: flex;
     width: 275px;
     align-items: center;
@@ -63,12 +63,12 @@ header {
     border-radius: 5px;
     margin-top: 20px;
 }
-#cmd1 > i {
+.cmd i {
     padding: 0px 8px 0px 14px;
     color: white;
     font-size: 1.8em;
 }
-#cmd1 > p {
+.cmd p {
     color:#fff;
 }
 #clique {
@@ -225,4 +225,108 @@ nav > p {
 }
 #contato > p {
     color: var(--cor2);
+}
+    /* 
+            FORMULÁRIO
+    */
+
+form {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-top: 1.2em;
+    padding-bottom: 2em;
+    background-color: var(--cor1);
+}
+
+form p {
+     width: 80%;
+     margin: auto;
+     margin-bottom: 1em;
+}
+
+input {
+    border: none;    
+    border-radius: 3px;
+}
+
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 15.6em;
+    min-height: 10.6em;;
+    height: 10.6em;
+    border: none;
+
+    border-radius: 5px;
+    padding-left:.5em;
+    padding-top: 1em;
+}
+
+form button {
+    width: 200px;
+    background-color: #27ca2c;
+    padding: .7em 1.5em;
+    border-radius: .2em;
+    border: none;
+    box-shadow: 1px 1px 3px #383838;
+    outline: none;
+    cursor: pointer;
+    color:#ffffff
+}
+#limp {
+    margin-top: 1em;
+    background-color: #d6d6d6;
+}
+
+#cmd3 {
+    margin: auto;
+}
+
+#contato img {
+    display: flex;
+    margin-left:2%;
+    width: 25%;
+    margin-left: 3%;
+}
+
+/* 
+        RODAPÉ
+*/
+
+footer {
+    display: flex;
+    margin:auto;
+    background-color: var(--cor1);
+    max-width: 1200px;
+    max-height: 150px;
+    min-height: 40px;
+}
+
+footer img {
+    width: 25%;
+    padding: 10px;
+    margin-left: 2%;
+}
+
+footer h1 {
+    font-size: 8pt;
+    width: 40%;
+    margin: auto;
+    opacity: 50%;
+}
+
+#redesf {
+    margin: auto;
+}
+#redesf a {
+    
+    text-decoration: none;
+    color: #fff;
+    opacity: 70%;
+    transition: opacity .5s;
+    margin: 5px; 
 }
