@@ -95,3 +95,41 @@ nav {
 #equipos h1 {
     padding-left: 7%;
 }
+#p1 > h1 {
+    width: 100vw;
+    margin: auto;
+    text-align: left;
+}
+.tleft {
+    background-color: var(--cor1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tleft h1 {
+    font-size: 1.2em;
+}
+.tleft h2 {
+    color: #fff;
+    font-size: 1em;
+    border-left: 2px solid #fff;
+    font-weight: lighter;
+    padding:0 2% 0 1%;
+}
+
+.contentp1 {
+    display: flex;
+    justify-content: space-between;
+}
+#imgp1 {
+    width: 50%;
+}
+#infotecp1 {
+    width: auto;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 3%;
+}
+#infotecp1 li {
+    font-size: .6em;
+}
