@@ -64,6 +64,11 @@ nav {
     position: relative;
     left: 40%;
 }
+#redesf {
+    position: inherit;
+    margin: auto;
+    margin-right: 3%;
+}
 /*
         Segue APRESENTAÇÃO DA EMPRESA
 */
